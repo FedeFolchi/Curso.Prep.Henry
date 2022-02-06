@@ -50,7 +50,7 @@ Los elementos "inline" son opuestos a los "block", dado que no comenzarán en un
 
 Podemos controlar cómo un elemento se comporta usando la propiedad "display". Si queremos que un elemento "inline" actúe como uno "block", le definimos:
 
-```css
+```css   
   div {
     display: block;
   }
