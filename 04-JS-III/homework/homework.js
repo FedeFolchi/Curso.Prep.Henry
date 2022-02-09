@@ -125,7 +125,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // Tu código:
 
 
-
+  array.unshift(elemento);
+  return array;
 
 
   array.unshift(elemento)
@@ -146,12 +147,14 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  return palabras.join(" ");
 
 
 
 
 
-  return palabras.join("");
+
+  return palabras.join(" ");
 
 // return palabras.join(" ")
 
@@ -171,7 +174,13 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   // return array.includes(elemento);
- 
+  for  (var i = 0; i < array.length; i++)
+  
+  if(array[i].length === elemento){
+    return true;
+  } else {
+    return false;
+  }
  
  
  
@@ -203,8 +212,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
- 
- 
+ var suma = 0
+ for(var i = 0; i < numeros.length; i++){
+  suma = suma + numeros[i];
+  return suma
+ }
  
  
  
@@ -233,14 +245,17 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
- 
- 
- 
- 
+  var resultado= 0
+  for(var i = 0; i < resultadosTest.length; i++){
+    resultado = resultado + resultadosTest[i];
+  
+    var promediofinal = resultado / resultadosTest.length;
+    return promediofinal;
+  }
  
   var resultado = 0;
   for(let i = 0; i < resultadosTest.length; i++){
-    resultado = resultado + resultadosTest [i]
+    resultado = resultado + resultadosTest[i]
     }
     var promediofinal = resultado / resultadosTest.length;
     return promediofinal;
@@ -267,8 +282,13 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  
-
+  var numMasGrande = 0
+  for(var i = 0; i < numeros.length; i++){
+    if(numMasGrande < numeros[i] {
+      numMasGrande = numeros[i];
+    }
+  }
+return numMasGrande
 
 
 
@@ -332,7 +352,7 @@ function cuentoElementos(arreglo){
   //  var cuantos = 0
 //  for (let i = 0; i < arreglo.length; i++){
 //  if(arreglo[i] > 18) {
-//    cuantos = cuantos +1;
+//    cuantos = cuantos + 1;
 //  }
 //}
 //return cuantos;

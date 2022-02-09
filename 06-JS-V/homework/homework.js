@@ -59,11 +59,11 @@ function agregarStringInvertida() {
   String.prototype.reverse = function(){
    // return this.split('').reverse().join('')
   
-    var palabra
-    for (var i = this.length; i > 0; i--){
-       palabra = palabra + this[i-1]
+    var palabrainv = "";
+    for (var i = this.length - 1; i >= 0; i--){
+       palabrainv = palabrainv + this[i]
     }
-    return palabra
+    return palabrainv,
 }
 }
 // ---------------------------------------------------------------------------//

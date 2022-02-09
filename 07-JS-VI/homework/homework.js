@@ -6,6 +6,15 @@ function mayuscula(nombre) {
   //Tu código:
   return nombre[0].toUpperCase() + nombre.slice(1)
 }
+//var arr = nombre.split("")
+// arr[0] = arr[0].toUpperCase()
+// return arr.join("")
+
+
+
+//return nombre.charAt(0).toUppperCase() + nombre.slice(1)
+
+
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
@@ -34,16 +43,25 @@ function sumarArray(numeros, cb) {
     }
     cb(suma)
   }
+// var suma = numeros.reduce(function(valorAnterior,valorActual){
+//  return valorAnterior + valorActual
+//},0)
+// cb(suma)
 
-
+//
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  for (let i = 0; i < array.length, i++ )
+  for (let i = 0; i < array.length; i++ )
   cb(array[i]);
 }
+//array.forEach(function(valor){
+ // return cb(valor);
+//})
+//
+//
 
 function map(array, cb) {
   // Crea un nuevo array
@@ -56,6 +74,12 @@ function map(array, cb) {
   })
 return nuevoArray;
 }
+//
+//
+//
+
+
+
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
@@ -65,7 +89,7 @@ function filter(array) {
   var nuevoArray = [];
   for(let i = 0; i < array.length; i++){
   if(array[i][0] === "a"){
-    nuevoArray.push(array[i])
+    nuevoArray.push(array[i]);
   }
   }
   return nuevoArray;
@@ -75,7 +99,13 @@ var array.filter(function(palabra){
 return palabra[0] === "a"
 }
 
+//var nuevoArray = array.filter(palabra){
 
+}
+//return palabra[0] === "a"
+//)}
+//return nuevoArray;
+//
 
 // No modificar nada debajo de esta línea
 // --------------------------------

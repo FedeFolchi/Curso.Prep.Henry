@@ -26,6 +26,10 @@ function crearGato(nombre, edad) {
 //}
 
 
+//
+
+
+
 function agregarPropiedad(objeto, property) {
   // Agrega una propiedad al objeto (argumento "objeto") con el valor `null`
   // Devuelve el objeto
@@ -118,7 +122,7 @@ function nuevoUsuario(nombre, email, password) {
 //  var objeto = {
 //    nombre: nombre,
 //    email: email,
-//    password: password,
+//    password: password
 //  }
 //  return objeto;
 //}
@@ -169,6 +173,8 @@ function tienePropiedad(objeto, propiedad) {
 //  }
 
 //}
+// return objeto.hasOwnProperty(propiedad)
+
 
 function verificarPassword(usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
@@ -248,10 +254,10 @@ function pasarUsuarioAPremium(usuarios) {
 
 
 
-  //  for(let i = 0; i < usuarios.length; i++){
+  //  for(var i = 0; i < usuarios.length; i++){
   
   //usuarios[i].esPremium = true
-//} return usuarios
+//} return usuarios;
 //}
 
 function sumarLikesDeUsuario(usuario) {
@@ -271,10 +277,10 @@ function sumarLikesDeUsuario(usuario) {
 
 
 
-//  let suma = 0
+//  var suma = 0
   
-//  for(let i = 0 ; i < usuario.posts.length; i++){
-//    let like = usuario.posts[i].likes
+//  for(var i = 0 ; i < usuario.posts.length; i++){
+//    var like = usuario.posts[i].likes
 //    suma = suma + like
 //  }
 
@@ -307,7 +313,7 @@ function agregarMetodoCalculoDescuento(producto) {
 //  }
   
 //  return producto
-
+ //return this.precio - this.porcentajeDescuento* producto.precio
 //}
 
 // No modificar nada debajo de esta línea
